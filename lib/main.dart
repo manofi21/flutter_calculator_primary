@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:working_test/view/biodata_page.dart';
+import 'package:working_test/view/biodata_page/biodata_page.dart';
 import 'package:working_test/view/calculator_page/calculator_page.dart';
 import 'package:working_test/view/history_page.dart';
 import 'package:working_test/view_model/notivier_provider.dart';

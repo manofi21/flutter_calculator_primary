@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:working_test/view/biodata_page.dart';
 import 'package:working_test/view/calculator_page/calculator_page.dart';
 import 'package:working_test/view/history_page.dart';
@@ -117,7 +118,11 @@ class _MyHomePageState extends State<MyHomePage>
 final drawerHeader = UserAccountsDrawerHeader(
   accountName: Text('Jeremia Manogi Mario'),
   accountEmail: GestureDetector(
-      onTap: () {}, child: Text('jeremia.manogi.mario@email.com')),
+      onTap: () {
+        launch(
+            "mailto:jeremia.manogi.mario@gmail.com?subject=Asking A Question&body=I want to asking some Question");
+      },
+      child: Text('jeremia.manogi.mario@email.com')),
   currentAccountPicture: Hero(
     tag: "photo-profile",
     child: CircleAvatar(

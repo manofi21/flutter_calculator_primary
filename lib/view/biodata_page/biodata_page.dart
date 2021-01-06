@@ -8,11 +8,14 @@ class BiodataPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final listBiodata = [
+      // Full name
       Biodata(null, Colors.lime, "Jeremia Manogi Mario"),
+      // Gmail
       Biodata(() {
         launch(
             "mailto:jeremia.manogi.mario@gmail.com?subject=Asking A Question&body=I want to asking some Question");
       }, Colors.red, "jeremia.manogi.mario@gmail.com", "assets/gmail.png"),
+      // Github
       Biodata(() {
         Navigator.push(
           context,
@@ -24,6 +27,7 @@ class BiodataPage extends StatelessWidget {
         );
       }, Colors.black.withOpacity(0.7), "https://github.com/manofi21",
           "assets/github.png"),
+      // Linkedin
       Biodata(() {
         launch("https://www.linkedin.com/in/jeremiamanogi");
       }, Colors.blueAccent, "https://www.linkedin.com/in/jeremiamanogi",
